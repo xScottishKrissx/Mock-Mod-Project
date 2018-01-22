@@ -1,0 +1,47 @@
+/*
+//Variables
+$h1color: black;
+
+//Mixin - A group of Variables
+/*@mixin backface-visibility {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+}
+
+//Mixin: Arguements
+@mixin backface-visibility($visibility) {
+  backface-visibility: $visibility;
+  -webkit-backface-visibility: $visibility;
+  -moz-backface-visibility: $visibility;
+  -ms-backface-visibility: $visibility;
+  -o-backface-visibility: $visibility;
+}
+
+
+//Each Loop
+$list:(red, green, blue);
+@each $item in $list{
+  .#{$item}{
+    background: $item;
+  }
+}
+
+//For Loop
+
+//Sass If Statement
+// selector: if( $condition, $value-if-true, $value-if-false);
+
+
+body{
+  color:red;
+  background-color:red + blue;
+  @include backface-visibility(hidden);
+
+  p{color:green ;}
+
+  h1{color:$h1color;}
+}
+*/
