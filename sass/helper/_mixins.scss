@@ -1,0 +1,31 @@
+//Index.php
+@mixin contentBoxStyling {
+  min-height:$contenBoxHeight;
+  background-size: cover;
+  font-family: Raleway,sans-serif;
+  h1{
+      background-color: $contentBoxBackgroundColour;
+      width: 100%;
+      font-size: 5rem;
+      font-weight: bold;
+      margin-bottom: 0;
+  }
+  div{
+    background-color: $contentBoxBackgroundColour;
+    color: #fff;
+    padding:1rem;
+    width:100%;
+
+    :nth-child(2){
+      float:right;
+    }
+
+    .link{
+      background-color: rgba(76, 76, 76, 0.0);
+      text-align:right;
+    }
+
+  }
+
+
+}

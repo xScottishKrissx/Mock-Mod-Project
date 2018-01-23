@@ -1,0 +1,16 @@
+To Do / Planned / Known Issues
+  *Build the rest of the owl
+  *Added Smooth Scrolling via Jquery to move up and down page
+  *Added store page - Databases and Ajax
+  *Added contact page - JavaScript and Angular
+
+
+
+23/01/2018
+  +Got styling of content boxes
+  +Decided on content
+  +Created overall structure of website
+
+22/01/2018
+  +Set Up Project
+  +Should probably not create the changelog a day after starting said Project
