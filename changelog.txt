@@ -1,10 +1,28 @@
 To Do / Planned / Known Issues
   *Build the rest of the owl
+
+  *Site Wide
   *Added Smooth Scrolling via Jquery to move up and down page
-  *Added store page - Databases and Ajax
-  *Added contact page - JavaScript and Angular
 
+  *index
+    *Made it better.
+  *Store page
+    *Added basic layout
+    *Added ecommerce functionality
+    *Created Connection to Database
+    *Added dynamically load items to page
+  *Added contact page -
+    *Added basic layout
+    *Added form
 
+25/01/201
+  +Implemented button that loads more content on
+  the page
+
+24/01/2018
++Create Database and Populated tables
+  +Name, Description, ViewCount, Image and ID
++Started on implementing infinite scroll for mods/store page
 
 23/01/2018
   +Got styling of content boxes

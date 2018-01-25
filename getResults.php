@@ -1,9 +1,12 @@
-<?php include ("header.php"); ?>
+<div class="modItem">
+
+
+
 <?php
 include ("pdo.php");
 
   try{
-  	$result = $db->prepare("select * from mods ORDER BY id DESC ");
+  	$result = $db->prepare("select * from mods ORDER BY id DESC LIMIT 1, 1");
   	$result->execute();
 
     if($result->rowCount() > 0){
@@ -26,6 +29,3 @@ include ("pdo.php");
   };
 ?>
 </div>
-
-
-<?php include ("footer.php"); ?>

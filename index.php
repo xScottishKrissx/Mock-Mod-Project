@@ -36,18 +36,7 @@
  </div>
 </div>
 
-<div class="row footer">
-  <div class="">
-    <h1>Footer</h1>
-  </div>
-</div>
 
-
-
-
-
-
-</div>
 
 
 <?php include ("footer.php"); ?>

@@ -2,7 +2,9 @@
 @import "helper/mixins";
 @import "helper/variables";
 
-
+body{
+  visibility: visible;
+}
 .container{
   margin-top: 4rem;
 
@@ -29,6 +31,17 @@
     .aboutBox{
         background-image: url("../img/aberfoyle3.jpg");
         @include contentBoxStyling;
+    }
+
+    .modGallery{
+
+
+      margin-top: -0.47rem;
+
+      .modItem{
+        width:100%;
+      }
+
     }
 
   .footer{
