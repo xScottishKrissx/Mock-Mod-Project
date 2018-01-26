@@ -5,6 +5,10 @@
 body{
   visibility: visible;
 }
+
+.show{display:inherit;}
+.hide{display:none;}
+
 .container{
   margin-top: 4rem;
 
@@ -34,8 +38,6 @@ body{
     }
 
     .modGallery{
-
-
       margin-top: -0.47rem;
 
       .modItem{
@@ -43,6 +45,8 @@ body{
       }
 
     }
+    .loader{text-align: center;}
+
 
   .footer{
         background-color:$footerColor;

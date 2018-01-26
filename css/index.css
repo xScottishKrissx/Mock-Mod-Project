@@ -1,6 +1,12 @@
 body {
   visibility: visible; }
 
+.show {
+  display: inherit; }
+
+.hide {
+  display: none; }
+
 .container {
   margin-top: 4rem; }
   .container .row img {
@@ -77,6 +83,8 @@ body {
     margin-top: -0.47rem; }
     .container .modGallery .modItem {
       width: 100%; }
+  .container .loader {
+    text-align: center; }
   .container .footer {
     background-color: rgba(52, 58, 64, 0.5);
     height: 50vh;

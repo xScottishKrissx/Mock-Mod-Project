@@ -1,24 +1,30 @@
 //JavaScript
 $(document).ready(function(){
 
+  $(".loader").addClass("hide");
+  $('.endofResultsMessage').addClass("hide");
 
-  //If I Cant get this to work
-  // I might attach the load to a button
- /*
-  $(window).scroll(function() {
-     if($(window).scrollTop() + $(window).height() == $(document).height()) {
-        console.log("end of page");
-     }
-  });
-*/
-  var load = 0;
-  $(".myBtn").on("click",function(){
+ var load = 0;
+    $(".myBtn").on("click",function(){
+
       console.log("Button pressed");
-      load=load + 1;
-      console.log(load);
-      $.post("ajax.php", {load:load}, function(data){
-        $(".modItem").append(data);
-      });
+      $(".loader").removeClass('hide').addClass("show");
+
+      if (load * 2 == ffff-2) {
+        console.log("End of Program")
+        $('.myBtn').hide();
+        $('.endofResultsMessage').removeClass('hide').addClass("show");
+        $(".loader").addClass("hide");
+      }
+      else{
+        load=load + 1;
+        console.log(load);
+        $.post("ajax.php", {load:load}, function(data){
+          $(".modItem").append(data);
+          $(".loader").addClass("hide");
+        });
+
+      }
   });
 
 

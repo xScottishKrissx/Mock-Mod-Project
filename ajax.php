@@ -1,9 +1,9 @@
+
 <?php
 include ("pdo.php");
 try{
 
 $load = htmlentities(strip_tags($_POST['load']))*2;
-
 $result = $db->prepare("select * from mods ORDER BY id ASC LIMIT " . $load .", 2");
 //$result->bindParam(':load', $load);
 $result->execute();

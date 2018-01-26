@@ -9,6 +9,9 @@ include ("pdo.php");
   	$result = $db->prepare("select * from mods ORDER BY id DESC LIMIT 1, 1");
   	$result->execute();
 
+
+
+
     if($result->rowCount() > 0){
 			$result->setFetchMode(PDO::FETCH_ASSOC);
 			$iterator = new IteratorIterator($result);

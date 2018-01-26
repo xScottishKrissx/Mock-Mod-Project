@@ -1,8 +1,5 @@
 <?php include ("header.php"); ?>
-<?php
-// Start the session
-session_start();
-?>
+
 <div class="container">
 
  <p>Mod Gallery</p>
@@ -13,6 +10,7 @@ session_start();
 
         try{
           $result = $db->prepare("select * from mods WHERE id BETWEEN 1 AND 2");
+          $nRows = $db->query('select count(*) from mods')->fetchColumn();
           $result->execute();
 
           if($result->rowCount() > 0){
@@ -38,11 +36,18 @@ session_start();
 
     </div>
 </div>
+
+<div class="loader">
+  <img src="img/loader.gif" alt="results_loading" />
+</div>
 <button type="button" class="myBtn" name="button">Button</button>
-<?php echo "You Win" ?>
+<div class="endofResultsMessage">Oops! No More Results</div>
+
 </div>
 
-
+<script type="text/javascript">
+  var ffff = '<?php echo $nRows; ?>';
+</script>
 
 
 
