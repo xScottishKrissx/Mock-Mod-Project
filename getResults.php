@@ -17,7 +17,6 @@ include ("pdo.php");
 			$iterator = new IteratorIterator($result);
 
 			foreach($iterator as $row){
-        echo $row['id'];
 				echo "<h3>". $row['name']."</h3>";
 				echo "<p>" . $row['description'] . "</p>";
 				echo "<p>".$row['image']."</p>";

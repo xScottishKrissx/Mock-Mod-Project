@@ -20,7 +20,7 @@ $(document).ready(function(){
         load=load + 1;
         console.log(load);
         $.post("ajax.php", {load:load}, function(data){
-          $(".modItem").append(data);
+          $(".modItemArea").append(data);
           $(".loader").addClass("hide");
         });
 

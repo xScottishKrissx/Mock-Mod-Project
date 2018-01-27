@@ -8,7 +8,14 @@ body {
   display: none; }
 
 .container {
+  background-color: #4c4c4c;
   margin-top: 4rem; }
+  .container .pageTitle {
+    margin-top: -0.47rem;
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    font-size: 3rem;
+    margin-bottom: 3rem; }
   .container .row img {
     width: 100%;
     height: 50%; }
@@ -80,11 +87,50 @@ body {
         background-color: rgba(76, 76, 76, 0);
         text-align: right; }
   .container .modGallery {
-    margin-top: -0.47rem; }
-    .container .modGallery .modItem {
+    margin-top: -1.47rem; }
+    .container .modGallery .modItemArea {
       width: 100%; }
+      .container .modGallery .modItemArea .modItem {
+        background-size: cover;
+        color: #fff;
+        height: 30%;
+        margin-bottom: 5rem;
+        position: relative; }
+        .container .modGallery .modItemArea .modItem .modlearnMoreBtn {
+          width: 100%;
+          background-color: #231f1f;
+          font-size: 1.4rem;
+          height: 4rem;
+          padding: 1rem;
+          text-align: center; }
+        .container .modGallery .modItemArea .modItem p {
+          position: absolute;
+          bottom: 0; }
+        .container .modGallery .modItemArea .modItem h3 {
+          background-color: rgba(76, 76, 76, 0.3);
+          height: 100%;
+          margin-bottom: 0; }
   .container .loader {
     text-align: center; }
+  .container .myBtn {
+    background-color: #231f1f82;
+    color: #fff;
+    height: 4rem;
+    padding-left: 7rem;
+    padding-top: 1rem;
+    font-size: 1.3rem; }
+  .container .endofResultsMessage {
+    background-color: white;
+    height: 4rem;
+    padding-left: 4rem;
+    padding-top: 1rem;
+    font-size: 1.3rem; }
+  .container .scrollToTop {
+    background-color: #373535;
+    height: 4rem;
+    padding-left: 6rem;
+    padding-top: 1rem;
+    font-size: 1.3rem; }
   .container .footer {
     background-color: rgba(52, 58, 64, 0.5);
     height: 50vh;

@@ -10,15 +10,19 @@ To Do / Planned / Known Issues
     *Styled store page
     *Added basic layout
     *Added ecommerce functionality
+    *Changed position of ffff variable
   *Added contact page -
     *Added basic layout
     *Added form
+
+27/0/2018
+-Began Styling of mod page ui
 
 26/01/2018
   *added loading gif to store page
   *store page now lets users know when there are no
    more products to display
-  
+
 
 25/01/201
 *Added dynamically loaded items to page

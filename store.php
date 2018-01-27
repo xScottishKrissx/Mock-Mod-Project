@@ -1,10 +1,10 @@
 <?php include ("header.php"); ?>
-
+<span id="scrollAnchor"></span>
 <div class="container">
 
- <p>Mod Gallery</p>
+<div  class="row pageTitle">Mod Gallery</div>
 <div class="row modGallery">
-    <div class="modItem">
+    <div class="modItemArea">
       <?php
       include ("pdo.php");
 
@@ -18,10 +18,10 @@
             $iterator = new IteratorIterator($result);
 
             foreach($iterator as $row){
-              echo $row['id'];
-              echo "<h3>". $row['name']."</h3>";
+              echo "<div class='modItem' style='background-image:url(img/modpage/".$row['image'].".jpg);'><h3>". $row['name']."</h3>";
               echo "<p>" . $row['description'] . "</p>";
-              echo "<p>".$row['image']."</p>";
+              echo "<div class='modlearnMoreBtn'><span>Learn More...</span></div></div>";
+
             }
 
             //$db = null;
@@ -40,10 +40,11 @@
 <div class="loader">
   <img src="img/loader.gif" alt="results_loading" />
 </div>
-<button type="button" class="myBtn" name="button">Button</button>
-<div class="endofResultsMessage">Oops! No More Results</div>
+<div class="row myBtn">V See More V</div>
+<div class="row endofResultsMessage">Oops! No More Results</div>
+<div class="row scrollToTop" ><a href="#scrollAnchor">^Scroll To Top^</a></div>
 
-</div>
+
 
 <script type="text/javascript">
   var ffff = '<?php echo $nRows; ?>';
