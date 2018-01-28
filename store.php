@@ -18,10 +18,14 @@
             $iterator = new IteratorIterator($result);
 
             foreach($iterator as $row){
-              echo "<div class='modItem' style='background-image:url(img/modpage/".$row['image'].".jpg);'><h3>". $row['name']."</h3>";
-              echo "<p>" . $row['description'] . "</p>";
-              echo "<div class='modlearnMoreBtn'><span>Learn More...</span></div></div>";
 
+              echo "<div class='modItem'>";
+              echo "<div class='statsBar'>0 - Views | 0 - Downloads | 0 - Likes </div>";
+              echo "<div class='modTitle' style='background-image:url(img/modpage/".$row['image'].".jpg);'>
+               <h3>". $row['name']."</h3></div>";
+              echo "<div class='modDescription'>" . $row['description'] . "</div>";
+              echo "<div class='modlearnMoreBtn'><span>View Mod...</span></div>";
+              echo "</div>";
             }
 
             //$db = null;
@@ -40,13 +44,14 @@
 <div class="loader">
   <img src="img/loader.gif" alt="results_loading" />
 </div>
-<div class="row myBtn">V See More V</div>
+<div class="row myBtn">Load More Mods</div>
 <div class="row endofResultsMessage">Oops! No More Results</div>
 <div class="row scrollToTop" ><a href="#scrollAnchor">^Scroll To Top^</a></div>
 
 
 
 <script type="text/javascript">
+  //This needs to be moved.
   var ffff = '<?php echo $nRows; ?>';
 </script>
 

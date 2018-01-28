@@ -6,14 +6,21 @@ To Do / Planned / Known Issues
 
   *index
     *Made it better.
+
   *Store page
-    *Styled store page
-    *Added basic layout
     *Added ecommerce functionality
     *Changed position of ffff variable
+    *Added number of mods to load more button
+
   *Added contact page -
     *Added basic layout
     *Added form
+
+  *Added content to footer
+-----------------------------------------------------------------------
+
+28/01/2017
+-Further Styling and Tweaks to the mods page
 
 27/0/2018
 -Began Styling of mod page ui

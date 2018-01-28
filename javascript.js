@@ -3,6 +3,8 @@ $(document).ready(function(){
 
   $(".loader").addClass("hide");
   $('.endofResultsMessage').addClass("hide");
+  $('.scrollToTop').addClass("hide");
+
 
  var load = 0;
     $(".myBtn").on("click",function(){
@@ -14,6 +16,7 @@ $(document).ready(function(){
         console.log("End of Program")
         $('.myBtn').hide();
         $('.endofResultsMessage').removeClass('hide').addClass("show");
+        $('.scrollToTop').removeClass('hide').addClass("show");
         $(".loader").addClass("hide");
       }
       else{

@@ -9,10 +9,15 @@ $result = $db->prepare("select * from mods ORDER BY id ASC LIMIT " . $load .", 2
 $result->execute();
 
 while ($row = $result->fetch(PDO::FETCH_ASSOC)){
-  echo "<div class='modItem' style='background-image:url(img/modpage/".$row['image'].".jpg);'><h3>". $row['name']."</h3>";
-  echo "<p>" . $row['description'] . "</p>";
-  echo "<div class='modlearnMoreBtn'><span>Learn More...</span></div></div>";
-	}
+
+  echo "<div class='modItem'>";
+  echo "<div class='statsBar'>0 - Views | 0 - Downloads | 0 - Likes </div>";
+  echo "<div class='modTitle' style='background-image:url(img/modpage/".$row['image'].".jpg);'>
+   <h3>". $row['name']."</h3></div>";
+  echo "<div class='modDescription'>" . $row['description'] . "</div>";
+  echo "<div class='modlearnMoreBtn'><span>View Mod...</span></div>";
+  echo "</div>";
+}
 }Catch(Exception $e) {
   echo '<p>', $e->getMessage(), '</p>';
   die("");

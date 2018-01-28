@@ -11,11 +11,12 @@ body {
   background-color: #4c4c4c;
   margin-top: 4rem; }
   .container .pageTitle {
-    margin-top: -0.47rem;
+    background-color: #343a408a;
     color: #fff;
-    font-family: Raleway, sans-serif;
+    font-family: Raleway, sans-serif !important;
     font-size: 3rem;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    margin-top: -0.47rem; }
   .container .row img {
     width: 100%;
     height: 50%; }
@@ -87,18 +88,33 @@ body {
         background-color: rgba(76, 76, 76, 0);
         text-align: right; }
   .container .modGallery {
-    margin-top: -1.47rem; }
+    margin-top: -1.47rem;
+    font-family: Raleway, sans-serif !important; }
     .container .modGallery .modItemArea {
       width: 100%; }
       .container .modGallery .modItemArea .modItem {
-        background-size: cover;
-        color: #fff;
-        height: 30%;
-        margin-bottom: 5rem;
-        position: relative; }
+        margin-bottom: 3rem;
+        padding: 5px; }
+        .container .modGallery .modItemArea .modItem .statsBar {
+          background-color: #333131;
+          color: #ffffff8a;
+          font-size: 10px;
+          text-align: center; }
+        .container .modGallery .modItemArea .modItem .modTitle {
+          background-size: cover;
+          color: #fff;
+          font-family: Raleway, sans-serif !important;
+          height: 30%;
+          position: relative; }
+        .container .modGallery .modItemArea .modItem .modDescription {
+          background-color: #231f1f99;
+          color: white;
+          min-height: 7rem;
+          padding: 10px; }
         .container .modGallery .modItemArea .modItem .modlearnMoreBtn {
           width: 100%;
           background-color: #231f1f;
+          color: #ffffff8a;
           font-size: 1.4rem;
           height: 4rem;
           padding: 1rem;
@@ -116,7 +132,7 @@ body {
     background-color: #231f1f82;
     color: #fff;
     height: 4rem;
-    padding-left: 7rem;
+    padding-left: 6rem;
     padding-top: 1rem;
     font-size: 1.3rem; }
   .container .endofResultsMessage {
