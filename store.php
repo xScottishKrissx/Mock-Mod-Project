@@ -9,7 +9,7 @@
       include ("pdo.php");
 
         try{
-          $result = $db->prepare("select * from mods WHERE id BETWEEN 1 AND 2");
+          $result = $db->prepare("select * from mods WHERE id BETWEEN 1 AND 4");
           $nRows = $db->query('select count(*) from mods')->fetchColumn();
           $result->execute();
 

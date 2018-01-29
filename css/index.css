@@ -9,7 +9,8 @@ body {
 
 .container {
   background-color: #4c4c4c;
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  min-width: 100%; }
   .container .pageTitle {
     background-color: #343a408a;
     color: #fff;
@@ -91,12 +92,14 @@ body {
     margin-top: -1.47rem;
     font-family: Raleway, sans-serif !important; }
     .container .modGallery .modItemArea {
+      text-align: center;
       width: 100%; }
       .container .modGallery .modItemArea .modItem {
         margin-bottom: 3rem;
-        padding: 5px; }
+        padding: 0.5rem;
+        text-align: left; }
         .container .modGallery .modItemArea .modItem .statsBar {
-          background-color: #333131;
+          background-color: #3f4246;
           color: #ffffff8a;
           font-size: 10px;
           text-align: center; }
@@ -107,18 +110,23 @@ body {
           height: 30%;
           position: relative; }
         .container .modGallery .modItemArea .modItem .modDescription {
-          background-color: #231f1f99;
+          background-color: #3f4246;
           color: white;
           min-height: 7rem;
           padding: 10px; }
         .container .modGallery .modItemArea .modItem .modlearnMoreBtn {
           width: 100%;
-          background-color: #231f1f;
+          background-color: #3f4246;
+          border-top: 1px solid #4c4c4c;
           color: #ffffff8a;
           font-size: 1.4rem;
           height: 4rem;
           padding: 1rem;
-          text-align: center; }
+          text-align: center;
+          user-select: none; }
+          .container .modGallery .modItemArea .modItem .modlearnMoreBtn:active {
+            background-color: #3f42468c;
+            color: #fff; }
         .container .modGallery .modItemArea .modItem p {
           position: absolute;
           bottom: 0; }
@@ -126,6 +134,22 @@ body {
           background-color: rgba(76, 76, 76, 0.3);
           height: 100%;
           margin-bottom: 0; }
+    @media only screen and (min-width: 778px) {
+      .container .modGallery .modItem {
+        width: 45vw;
+        display: inline-block; } }
+    @media only screen and (min-width: 1024px) {
+      .container .modGallery .modItem {
+        width: 33vw;
+        display: inline-block; } }
+    @media only screen and (min-width: 1440px) {
+      .container .modGallery .modItem {
+        width: 75vw;
+        display: inline-block; } }
+    @media only screen and (min-width: 1440px) {
+      .container .modGallery .modItem {
+        width: 20vw;
+        display: inline-block; } }
   .container .loader {
     text-align: center; }
   .container .myBtn {
