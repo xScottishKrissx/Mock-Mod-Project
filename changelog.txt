@@ -5,7 +5,6 @@ To Do / Planned / Known Issues
   *Xampp
   Prettify URLs
   *Site Wide
-  *Added Smooth Scrolling via Jquery to move up and down page
 
   *index
     *Made it better.
@@ -19,10 +18,18 @@ To Do / Planned / Known Issues
 
   *Added contact page -
     *Added basic layout
-    *Added form
 
-  *Added content to footer
+  *Footer
+    *Added content to footer
+    *Adjusted size of footer at larger resolutions as it looked
+      large and empty
 -----------------------------------------------------------------------
+31/01/2018
+  -Added Smooth Scrolling via Jquery to move up and down mods page
+  -Added Contact Form to About page
+  -Contact form now sends info to the database
+  -Added simple form validation to contact form
+
 
 29/01/2018
 -Made store more responsive across different devices
@@ -42,7 +49,7 @@ To Do / Planned / Known Issues
    more products to display
 
 
-25/01/201
+25/01/2018
 *Added dynamically loaded items to page
 *Created Connection to Database
   +Implemented button that loads more content on

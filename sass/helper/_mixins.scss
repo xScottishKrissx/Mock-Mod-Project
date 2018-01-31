@@ -2,7 +2,7 @@
 @mixin contentBoxStyling {
   min-height:$contenBoxHeight;
   background-size: cover;
-  font-family: Raleway,sans-serif;
+  font-family: $siteFont;
   h1{
       background-color: $contentBoxBackgroundColour;
       width: 100%;
@@ -29,6 +29,21 @@
 
 
 }
+//SITE WIDE
+@mixin buttonStyling{
+  background-color: #231f1f82;
+  color:#fff;
+  height:4rem;
+  padding-left: 6rem;
+  padding-top: 1rem;
+  font-size:1.3rem;
+}
+
+@mixin linkStyling{
+  a, a:hover, a:active, a:link{color:#fff; text-decoration: none;}
+}
+
+//MEDIA QUERIES
 @mixin lighterBackgroundColor{
   //Make colour 50% of another color
 }

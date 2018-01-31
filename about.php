@@ -1,31 +1,29 @@
 <?php include ("header.php"); ?>
-<?php
-include ("pdo.php");
 
-  try{
-  	$result = $db->prepare("select * from mods ORDER BY id DESC ");
-  	$result->execute();
+<?php include ("pdo.php"); ?>
 
-    if($result->rowCount() > 0){
-			$result->setFetchMode(PDO::FETCH_ASSOC);
-			$iterator = new IteratorIterator($result);
+<div class="container">
+  <div class="pageContent">
+    <div  class="row pageTitle">Contact Form</div>
 
-			foreach($iterator as $row){
-        echo $row['id'];
-				echo "<h3>". $row['name']."</h3>";
-				echo "<p>" . $row['description'] . "</p>";
-				echo "<p>".$row['image']."</p>";
-      }
+      <div class="contactFormContainer">
 
-      //$db = null;
-      }else{
-			  echo '<p>No Results could be displayed.</p>';
-		}
-  }Catch(Exception $e) {
-  	die("Oops something went wrong");
-  };
-?>
+        <form id="contactForm">
+          <p>Forename</p> <input type="text" id="forename" name="firstName" placeholder="Enter your forename..." maxlength="100"><br/>
+
+          <p>Surname </p><input type="text" id="surname" name="surname" placeholder="Enter your surname..." maxlength="100"><br/>
+
+          <p>Subject </p><input type="text" id="subject" name="Subject" placeholder="What are you contacting me about?" maxlength="200">
+
+          <br/><br/><textarea name="message" id="message" rows="8" cols="80" placeholder="Enter your message" maxlength="400"></textarea><br/><br/>
+
+          <input type="submit" name="submit" value="Submit" id="contactFormSubmit">
+        </form>
+
+      </div>
+
+      <div id="errorMessage"></div>
+
+  </div>
+  <?php include ("footer.php"); ?>
 </div>
-
-
-<?php include ("footer.php"); ?>

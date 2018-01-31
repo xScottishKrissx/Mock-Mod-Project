@@ -46,7 +46,7 @@
 </div>
 <div class="row myBtn">Load More Mods</div>
 <div class="row endofResultsMessage">Oops! No More Results</div>
-<div class="row scrollToTop" ><a href="#scrollAnchor">^Scroll To Top^</a></div>
+<div class="row scrollToTop" ><a href="#scrollAnchor">Scroll To Top</a></div>
 
 
 
