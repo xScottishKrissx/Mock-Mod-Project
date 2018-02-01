@@ -22,7 +22,7 @@
 
     .link{
       background-color: rgba(76, 76, 76, 0.0);
-      text-align:right;
+
     }
 
   }
@@ -48,29 +48,109 @@
   //Make colour 50% of another color
 }
 
-@mixin smallSub768 {
-  @media only screen and (max-width:768px){
+@mixin smallSub778 {
+  @media only screen and (max-width:777px){
     @content;
+
+    .circles{
+      display: none;
+    }
   }
 }
 @mixin tablet778 {
   @media only screen and (min-width:778px){
     @content;
+    .container{
+        .modItem{
+          width:45vw;
+          display: inline-block;
+        }
+        .introBox{
+          h1{font-size: 10rem;}
+          div{font-size: 4rem;}
+        }
+        .storeBox{
+          h1{
+            padding-top: 17rem;
+            text-align: center;
+            width: 50%;
+          }
+          div{
+            
+            background-color: rgb(52, 58, 64);
+            padding-top: 12rem;
+            width:50%;
+
+            a:link{padding-top: 4rem; text-align: left;}
+          }
+        }
+
+        .aboutBox{
+          h1{
+            padding-top: 17rem;
+            text-align: center;
+            width: 50%;
+          }
+          .aboutText{
+            background-color: rgb(52, 58, 64);
+            //padding-top: 12rem;
+            width:50%;
+
+            a:link{padding-top: 4rem; text-align: left;}
+            p{padding: 1rem;}
+            img{}
+          }
+        }
+
+      }
   }
 }
 
 @mixin laptop1024 {
   @media only screen and (min-width:1024px){
     @content;
+    .container{
+    .aboutBox{
+      .aboutText{
+        img{height:11rem; width:11rem;}
+        }
+      }
+      .storeBox{font-size:1.5rem;}
+    }
+      .modItem{
+        width:33vw;
+        display: inline-block;
+      }
+
+
+
   }
 }
 @mixin desktop1440 {
   @media only screen and (min-width:1440px){
     @content;
+    .container{
+    .aboutBox{
+      .aboutText{
+        img{height:19rem; width:19rem;}
+        }
+      }
+      .storeBox{
+        font-size: 2rem;
+      }
+    }
+      .modItem{
+        width:75vw;
+        display: inline-block;
+      }
   }
 }
 @mixin kkkk {
   @media only screen and (min-width:2560px){
     @content;
+      .modItem{
+        width:20vw;
+        display: inline-block;
+      }
   }
 }

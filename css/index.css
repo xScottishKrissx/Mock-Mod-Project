@@ -32,6 +32,7 @@ nav {
     color: #ffff; }
   .container .introBox {
     background-image: url("../img/aberfoyle1.jpg");
+    border-bottom: 0.4rem solid #343a40;
     margin-top: -0.47rem;
     min-height: calc(100vh - 56px) !important;
     background-size: cover;
@@ -51,10 +52,10 @@ nav {
       .container .introBox div :nth-child(2) {
         float: right; }
       .container .introBox div .link {
-        background-color: rgba(76, 76, 76, 0);
-        text-align: right; }
+        background-color: rgba(76, 76, 76, 0); }
   .container .storeBox {
     background-image: url("../img/aberfoyle2.jpg");
+    border-bottom: 0.4rem solid #343a40;
     min-height: calc(100vh - 56px) !important;
     background-size: cover;
     font-family: Raleway, sans-serif !important; }
@@ -72,8 +73,7 @@ nav {
       .container .storeBox div :nth-child(2) {
         float: right; }
       .container .storeBox div .link {
-        background-color: rgba(76, 76, 76, 0);
-        text-align: right; }
+        background-color: rgba(76, 76, 76, 0); }
   .container .aboutBox {
     background-image: url("../img/aberfoyle3.jpg");
     min-height: calc(100vh - 56px) !important;
@@ -93,8 +93,24 @@ nav {
       .container .aboutBox div :nth-child(2) {
         float: right; }
       .container .aboutBox div .link {
-        background-color: rgba(76, 76, 76, 0);
-        text-align: right; }
+        background-color: rgba(76, 76, 76, 0); }
+    .container .aboutBox h1 {
+      width: 100%; }
+    .container .aboutBox .aboutText a:link {
+      padding-top: 4rem;
+      text-align: left; }
+    .container .aboutBox .aboutText p {
+      padding: 1rem; }
+    .container .aboutBox .circles {
+      background-color: #343a40;
+      padding: 0;
+      text-align: center; }
+      .container .aboutBox .circles img {
+        background-color: red;
+        float: none !important;
+        border-radius: 11rem;
+        height: 8rem;
+        width: 8rem; }
   .container .modGallery {
     margin-top: -1.47rem;
     font-family: Raleway, sans-serif !important; }
@@ -141,22 +157,6 @@ nav {
           background-color: rgba(76, 76, 76, 0.3);
           height: 100%;
           margin-bottom: 0; }
-    @media only screen and (min-width: 778px) {
-      .container .modGallery .modItem {
-        width: 45vw;
-        display: inline-block; } }
-    @media only screen and (min-width: 1024px) {
-      .container .modGallery .modItem {
-        width: 33vw;
-        display: inline-block; } }
-    @media only screen and (min-width: 1440px) {
-      .container .modGallery .modItem {
-        width: 75vw;
-        display: inline-block; } }
-    @media only screen and (min-width: 1440px) {
-      .container .modGallery .modItem {
-        width: 20vw;
-        display: inline-block; } }
   .container .loader {
     text-align: center; }
   .container .myBtn {
@@ -212,5 +212,64 @@ nav {
     height: 50vh;
     color: #fff;
     font-size: 1.25rem; }
+
+@media only screen and (max-width: 777px) {
+  .circles {
+    display: none; } }
+@media only screen and (min-width: 778px) {
+  .container .modItem {
+    width: 45vw;
+    display: inline-block; }
+  .container .introBox h1 {
+    font-size: 10rem; }
+  .container .introBox div {
+    font-size: 4rem; }
+  .container .storeBox h1 {
+    padding-top: 17rem;
+    text-align: center;
+    width: 50%; }
+  .container .storeBox div {
+    background-color: #343a40;
+    padding-top: 12rem;
+    width: 50%; }
+    .container .storeBox div a:link {
+      padding-top: 4rem;
+      text-align: left; }
+  .container .aboutBox h1 {
+    padding-top: 17rem;
+    text-align: center;
+    width: 50%; }
+  .container .aboutBox .aboutText {
+    background-color: #343a40;
+    width: 50%; }
+    .container .aboutBox .aboutText a:link {
+      padding-top: 4rem;
+      text-align: left; }
+    .container .aboutBox .aboutText p {
+      padding: 1rem; } }
+@media only screen and (min-width: 1024px) {
+  .container .aboutBox .aboutText img {
+    height: 11rem;
+    width: 11rem; }
+  .container .storeBox {
+    font-size: 1.5rem; }
+
+  .modItem {
+    width: 33vw;
+    display: inline-block; } }
+@media only screen and (min-width: 1440px) {
+  .container .aboutBox .aboutText img {
+    height: 19rem;
+    width: 19rem; }
+  .container .storeBox {
+    font-size: 2rem; }
+
+  .modItem {
+    width: 75vw;
+    display: inline-block; } }
+@media only screen and (min-width: 2560px) {
+  .modItem {
+    width: 20vw;
+    display: inline-block; } }
 
 /*# sourceMappingURL=index.css.map */

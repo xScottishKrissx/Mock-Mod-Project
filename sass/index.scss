@@ -39,23 +39,46 @@ nav{display: none;}
         color:#ffff;
       }
     }
-
+////////Index Page
     .introBox{
         background-image: url("../img/aberfoyle1.jpg");
+        border-bottom: 0.4rem solid #343a40;
         margin-top: -0.47rem;
         @include contentBoxStyling;
         min-height: calc(100vh - 56px)!important ;
     }
     .storeBox{
         background-image: url("../img/aberfoyle2.jpg");
+        border-bottom: 0.4rem solid #343a40;
         @include contentBoxStyling;
     }
     .aboutBox{
         background-image: url("../img/aberfoyle3.jpg");
         @include contentBoxStyling;
+
+        h1{width: 100%;}
+
+        .aboutText{
+          a:link{padding-top: 4rem; text-align: left;}
+          p{padding: 1rem;}
+        }
+
+        .circles{
+          background-color: #343a40;
+          padding: 0;
+          text-align: center;
+
+          img{
+            background-color: red;
+            float: none !important;
+            border-radius: 11rem;
+            height: 8rem;
+            width: 8rem;
+          }
+        }
     }
 
-
+////////Mods Page
     .modGallery{
       margin-top: -1.47rem;
       font-family: $siteFont;
@@ -118,36 +141,6 @@ nav{display: none;}
             }
         }
       }
-      @include smallSub768{
-        .modItem{
-
-        }
-      }
-      @include tablet778{
-        .modItem{
-          width:45vw;
-          display: inline-block;
-        }
-      }
-      @include laptop1024{
-        .modItem{
-          width:33vw;
-          display: inline-block;
-        }
-      }
-      @include desktop1440{
-        .modItem{
-          width:75vw;
-          display: inline-block;
-        }
-      }
-      @include desktop1440{
-        .modItem{
-          width:20vw;
-          display: inline-block;
-        }
-      }
-
     }
     .loader{text-align: center;}
 
@@ -173,7 +166,7 @@ nav{display: none;}
     }
 
 
-    //Contact Us Page
+////////Contact Us Page
     .contactFormContainer{
       font-family: $siteFont;
       margin-top:-2rem;
@@ -208,3 +201,8 @@ nav{display: none;}
         font-size: 1.25rem;
       }
 }
+@include smallSub778;
+@include tablet778;
+@include laptop1024;
+@include desktop1440;
+@include kkkk;
