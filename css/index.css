@@ -14,6 +14,15 @@ nav {
 .hide {
   display: none; }
 
+.navbar-dark .navbar-brand {
+  color: #89888c; }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff; }
+
+.nav-link {
+  font-size: 2rem; }
+
 .container {
   background-color: #4c4c4c;
   margin-top: 4rem;
@@ -74,6 +83,8 @@ nav {
         float: right; }
       .container .storeBox div .link {
         background-color: rgba(76, 76, 76, 0); }
+    .container .storeBox a:link div {
+      padding-top: 4rem; }
   .container .aboutBox {
     background-image: url("../img/aberfoyle3.jpg");
     min-height: calc(100vh - 56px) !important;
@@ -160,12 +171,14 @@ nav {
   .container .loader {
     text-align: center; }
   .container .myBtn {
-    background-color: #231f1f82;
+    background-color: #404246;
+    border-bottom: 1px solid #4c4c4c;
     color: #fff;
     height: 4rem;
-    padding-left: 6rem;
     padding-top: 1rem;
     font-size: 1.3rem; }
+    .container .myBtn span {
+      margin: 0 auto; }
   .container .endofResultsMessage {
     background-color: white;
     font-size: 1.3rem;
@@ -195,13 +208,15 @@ nav {
     .container .contactFormContainer textarea {
       max-width: 100%; }
     .container .contactFormContainer #contactFormSubmit {
-      background-color: #231f1f82;
+      background-color: #404246;
+      border-bottom: 1px solid #4c4c4c;
       color: #fff;
       height: 4rem;
-      padding-left: 6rem;
       padding-top: 1rem;
       font-size: 1.3rem;
       padding: 0; }
+      .container .contactFormContainer #contactFormSubmit span {
+        margin: 0 auto; }
   .container #errorMessage {
     font-size: 1.3rem;
     color: white;
@@ -209,65 +224,117 @@ nav {
     text-decoration: underline; }
   .container .footer {
     background-color: rgba(52, 58, 64, 0.5);
-    height: 50vh;
+    min-height: 50vh;
+    font-family: Raleway, sans-serif !important;
     color: #fff;
-    font-size: 1.25rem; }
+    font-size: 0.9rem; }
+    .container .footer .logo {
+      color: #89888c;
+      padding-top: 4vh;
+      text-align: center; }
 
 @media only screen and (max-width: 777px) {
   .circles {
     display: none; } }
 @media only screen and (min-width: 778px) {
-  .container .modItem {
-    width: 45vw;
-    display: inline-block; }
-  .container .introBox h1 {
-    font-size: 10rem; }
-  .container .introBox div {
-    font-size: 4rem; }
-  .container .storeBox h1 {
-    padding-top: 17rem;
-    text-align: center;
-    width: 50%; }
-  .container .storeBox div {
-    background-color: #343a40;
-    padding-top: 12rem;
-    width: 50%; }
-    .container .storeBox div a:link {
-      padding-top: 4rem;
-      text-align: left; }
-  .container .aboutBox h1 {
-    padding-top: 17rem;
-    text-align: center;
-    width: 50%; }
-  .container .aboutBox .aboutText {
-    background-color: #343a40;
-    width: 50%; }
-    .container .aboutBox .aboutText a:link {
-      padding-top: 4rem;
-      text-align: left; }
-    .container .aboutBox .aboutText p {
-      padding: 1rem; } }
+  .container {
+    margin-top: 5rem; }
+    .container .modItem {
+      width: 45vw;
+      display: inline-block; }
+    .container .introBox h1 {
+      font-size: 10rem; }
+    .container .introBox div {
+      font-size: 4rem; }
+    .container .storeBox h1 {
+      padding-top: 17rem;
+      text-align: center;
+      width: 50%; }
+    .container .storeBox div {
+      background-color: #343a40;
+      padding-top: 12rem;
+      width: 50%; }
+      .container .storeBox div a:link {
+        padding-top: 4rem;
+        text-align: left; }
+    .container .aboutBox h1 {
+      padding-top: 17rem;
+      text-align: center;
+      width: 50%; }
+    .container .aboutBox .aboutText {
+      background-color: #343a40;
+      width: 50%; }
+      .container .aboutBox .aboutText a:link {
+        padding-top: 4rem;
+        text-align: left; }
+      .container .aboutBox .aboutText p {
+        padding: 1rem; }
+    .container .footer {
+      font-size: 1.1rem; }
+      .container .footer .logo {
+        padding-top: 25vh; }
+      .container .footer .welcome h3 {
+        color: #89888c;
+        padding-top: 10vh; }
+      .container .footer .getintouch h3 {
+        color: #89888c;
+        padding-top: 10vh; } }
 @media only screen and (min-width: 1024px) {
+  .container .aboutBox .aboutText p {
+    font-size: 1.5rem; }
   .container .aboutBox .aboutText img {
     height: 11rem;
     width: 11rem; }
   .container .storeBox {
-    font-size: 1.5rem; }
+    font-size: 1.3rem; }
 
   .modItem {
     width: 33vw;
     display: inline-block; } }
 @media only screen and (min-width: 1440px) {
+  .container .aboutBox .aboutText p {
+    font-size: 2rem; }
   .container .aboutBox .aboutText img {
     height: 19rem;
     width: 19rem; }
   .container .storeBox {
     font-size: 2rem; }
+  .container .footer {
+    font-size: 2.1rem; }
+    .container .footer .logo {
+      padding-top: 25vh; }
+    .container .footer .welcome h3 {
+      padding-top: 11vh; }
+    .container .footer .welcome p {
+      font-size: 1.5rem; }
+    .container .footer .getintouch h3 {
+      padding-top: 10vh; }
 
   .modItem {
     width: 75vw;
     display: inline-block; } }
 @media only screen and (min-width: 2560px) {
+  .container .storeBox div {
+    font-size: 3rem;
+    padding-top: 16vh; }
+  .container .aboutBox .aboutText p {
+    font-size: 3rem;
+    padding-top: 10vh; }
+  .container .aboutBox .aboutText a:link {
+    font-size: 4rem; }
+  .container .footer {
+    font-size: 4.1rem; }
+    .container .footer .logo {
+      padding-top: 17vh; }
+    .container .footer .welcome h3 {
+      padding-top: 10vh; }
+    .container .footer .welcome p {
+      font-size: 2rem; }
+    .container .footer .getintouch h3 {
+      padding-top: 10vh; }
+    .container .footer .getintouch address {
+      font-size: 2rem; }
+
   .modItem {
     width: 20vw;
     display: inline-block; } }

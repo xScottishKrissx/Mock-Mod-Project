@@ -22,7 +22,6 @@
 
     .link{
       background-color: rgba(76, 76, 76, 0.0);
-
     }
 
   }
@@ -31,12 +30,16 @@
 }
 //SITE WIDE
 @mixin buttonStyling{
-  background-color: #231f1f82;
+  background-color: #404246;
+  border-bottom: 1px solid #4c4c4c;
   color:#fff;
   height:4rem;
-  padding-left: 6rem;
+
   padding-top: 1rem;
   font-size:1.3rem;
+  span{
+    margin: 0 auto;
+  }
 }
 
 @mixin linkStyling{
@@ -61,6 +64,7 @@
   @media only screen and (min-width:778px){
     @content;
     .container{
+      margin-top: 5rem;
         .modItem{
           width:45vw;
           display: inline-block;
@@ -76,7 +80,7 @@
             width: 50%;
           }
           div{
-            
+
             background-color: rgb(52, 58, 64);
             padding-top: 12rem;
             width:50%;
@@ -101,7 +105,24 @@
             img{}
           }
         }
+        .footer{
+          font-size: 1.1rem;
+          .logo{ padding-top: 25vh;}
 
+          .welcome{
+            h3{
+              color: #89888c;
+              padding-top: 10vh;
+            }
+          }
+            .getintouch{
+              h3{
+                color: #89888c;
+                padding-top: 10vh;
+              }
+            }
+
+        }
       }
   }
 }
@@ -112,10 +133,11 @@
     .container{
     .aboutBox{
       .aboutText{
+        p{font-size: 1.5rem;}
         img{height:11rem; width:11rem;}
         }
       }
-      .storeBox{font-size:1.5rem;}
+      .storeBox{font-size:1.3rem;}
     }
       .modItem{
         width:33vw;
@@ -132,13 +154,31 @@
     .container{
     .aboutBox{
       .aboutText{
+        p{font-size: 2rem;}
         img{height:19rem; width:19rem;}
         }
+
       }
       .storeBox{
         font-size: 2rem;
       }
+
+      .footer{
+        font-size: 2.1rem;
+        .logo{ padding-top: 25vh;}
+
+        .welcome{
+          h3{
+            padding-top: 11vh;
+          }
+          p{font-size: 1.5rem;}
+        }
+          .getintouch{
+            h3{padding-top: 10vh;}
+          }
+      }
     }
+
       .modItem{
         width:75vw;
         display: inline-block;
@@ -148,6 +188,38 @@
 @mixin kkkk {
   @media only screen and (min-width:2560px){
     @content;
+
+    .container{
+      .storeBox{
+        div{
+          font-size: 3rem;
+          padding-top: 16vh;
+        }
+      }
+      .aboutBox{
+        .aboutText{
+          p{font-size: 3rem; padding-top: 10vh; }
+          a:link{font-size: 4rem;}
+        }
+      }
+
+      .footer{
+        font-size: 4.1rem;
+        .logo{ padding-top: 17vh;}
+
+        .welcome{
+          h3{
+            padding-top: 10vh;
+          }
+          p{font-size: 2rem;}
+        }
+          .getintouch{
+            h3{padding-top: 10vh;}
+            address{font-size: 2rem;}
+          }
+      }
+    }
+
       .modItem{
         width:20vw;
         display: inline-block;

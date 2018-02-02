@@ -1,11 +1,6 @@
 To Do / Planned / Known Issues
   *Build the rest of the owl
 
-
-  *Xampp
-  Prettify URLs
-  *Site Wide
-
   *Store page
     *Added ecommerce functionality
     *Changed position of ffff variable
@@ -13,11 +8,12 @@ To Do / Planned / Known Issues
     *Added button to let users change amount
        of mods loaded on page
 
-  *Footer
-    *Added content to footer
-    *Adjusted size of footer at larger resolutions as it looked
-      large and empty
 -----------------------------------------------------------------------
+2/2/2018 - End of active development.
+2/2/2018
+  - Added Content to footer
+  - Adjusted Size of Footer
+
 1/02/2018
   -Made it better.
   -Styled home page.

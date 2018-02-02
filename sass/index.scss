@@ -14,8 +14,9 @@ nav{display: none;}
 .show{display:inherit;}
 .hide{display:none;}
 
-
-
+.navbar-dark .navbar-brand{color:#89888c;}
+.navbar-dark .navbar-nav .nav-link{color:#fff;}
+.nav-link{font-size: 2rem; }
 .container{
   background-color: rgba(76, 76, 76, 1.0);
   margin-top: 4rem;
@@ -50,7 +51,12 @@ nav{display: none;}
     .storeBox{
         background-image: url("../img/aberfoyle2.jpg");
         border-bottom: 0.4rem solid #343a40;
+
         @include contentBoxStyling;
+        a:link{
+          div{padding-top: 4rem;}
+        }
+
     }
     .aboutBox{
         background-image: url("../img/aberfoyle3.jpg");
@@ -196,9 +202,15 @@ nav{display: none;}
 
   .footer{
         background-color:$footerColor;
-        height: $footerHeight;
+        min-height: $footerHeight;
+        font-family: $siteFont;
         color:#fff;
-        font-size: 1.25rem;
+        font-size: 0.9rem;
+        .logo{
+          color:#89888c;
+          padding-top: 4vh;
+          text-align: center;
+        }
       }
 }
 @include smallSub778;

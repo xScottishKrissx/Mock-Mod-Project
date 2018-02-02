@@ -44,7 +44,7 @@
 <div class="loader">
   <img src="img/loader.gif" alt="results_loading" />
 </div>
-<div class="row myBtn">Load More Mods</div>
+<div class="row myBtn"><span>Load More Mods</span></div>
 <div class="row endofResultsMessage">Oops! No More Results</div>
 <div class="row scrollToTop" ><a href="#scrollAnchor">Scroll To Top</a></div>
 

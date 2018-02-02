@@ -13,7 +13,7 @@
 <div class="container">
 
 <div id="introBoxAnchor" class="row introBox">
-  <h1>Dreich</h1>
+  <h1>dreich</h1>
   <div>
     <span>"adjective - Scottish" </span>
     <span>"a cold,dreich early april day"</span>
